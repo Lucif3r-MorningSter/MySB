@@ -1,6 +1,6 @@
 [Unit]
 Description=MySB security rules at boot
-Wants=nnetworking.service mariadb.service netfilter-persistent.service
+Wants=networking.service mariadb.service netfilter-persistent.service
 Before=remote-fs.target
 After=networking.service netfilter-persistent.service ssh.service mariadb.service postfix.service
 
